@@ -24,7 +24,7 @@ Edit **`docs/`**, **`pages/`**, **`courses/`**, and **`index.md`**; list or patt
 
 **Entry page for readers:** [`index.md`](index.md) (root of the built book).
 
-Completing the credential means leaving with a **full toolbox** — inspectable world models, deployment evidence, MCP marketing-tool integration practice, and publishable artifacts. See [`pages/certificate.md`](pages/certificate.md#graduate-toolbox).
+Completing the credential means leaving with a **full toolbox** — inspectable world models, deployment evidence, **technical AI practice** (eval, grounding, oversight), MCP marketing-tool integration, and publishable artifacts. See [`pages/certificate.md`](pages/certificate.md#graduate-toolbox).
 
 ---
 
@@ -34,6 +34,7 @@ Completing the credential means leaving with a **full toolbox** — inspectable 
 - **MyST** — where syllabi, lectures, program docs, and public pages live as structured Markdown.
 - **Jupyter Book** — **book** (site), **slides** (`slides/`), **exercises** (`exercises/`); CLI wraps the same MyST engine as `myst`.
 - **MCP** — courses integrate **marketing tools** (analytics, CRM, ads, CMS, etc.) via Model Context Protocol: **inspectable** tool contracts, not opaque automation.
+- **Curriculum principles** — [`docs/CURRICULUM_FULL.md`](docs/CURRICULUM_FULL.md): **AI literacy spine** (eval, RAG, generative QA, scoped tools), qualitative grounding, pacing, B2B/B2C and channel modeling notes.
 
 See [`docs/DESIGN.md`](docs/DESIGN.md) and [`docs/MCP_MARKETING.md`](docs/MCP_MARKETING.md) for architecture and tool policy.
 

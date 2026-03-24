@@ -27,7 +27,7 @@ Author in **MyST Markdown** (`.md`) with optional roles and directives; keep **J
 - [Certificate — including graduate toolbox](pages/certificate.md#graduate-toolbox)
 - [Curriculum at a glance](pages/curriculum-at-a-glance.md)
 - [Design document](docs/DESIGN.md)
-- [Full curriculum](docs/CURRICULUM_FULL.md)
+- [Full curriculum — AI literacy spine, pacing, differentiation](docs/CURRICULUM_FULL.md)
 - [Assessment](docs/ASSESSMENT.md)
 - [AIN-M6001 syllabus](courses/AIN-M6001/SYLLABUS.md)
 
