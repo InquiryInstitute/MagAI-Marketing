@@ -1,6 +1,6 @@
 # Program pages
 
-Public-facing summaries for web or print. Source format: **MyST Markdown** (see root `myst.yml`, `index.md`).
+Public-facing summaries for web or print. **Canonical** sources: **MyST Markdown** under root `myst.yml` / `index.md` — all other uses (site, exports, iNQspace imports) **derive** from there; do not fork copy here.
 
 | Page | Description |
 | --- | --- |

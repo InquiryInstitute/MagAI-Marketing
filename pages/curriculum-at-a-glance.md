@@ -2,6 +2,8 @@
 
 **18 courses · 3 terms**
 
+*Authoritative copy: part of the MyST project (`myst.yml`). Full detail: `docs/CURRICULUM_FULL.md`.*
+
 ---
 
 ## Term I — Audience & Message Worlds

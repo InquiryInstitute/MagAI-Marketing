@@ -2,6 +2,8 @@
 
 **Castalia Institute — Magister of Artificial Intelligence in Marketing**
 
+*Authoritative copy: part of the MyST project (`myst.yml`).*
+
 This document defines how students are evaluated: **dimensions**, **rubrics**, **term deliverables**, **SAMWISE journals**, **faculty defenses**, **thesis requirements**, **grading outcomes**, and **anti-gaming** rules aligned with the broader Magisterium evaluation philosophy.
 
 ---

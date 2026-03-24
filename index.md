@@ -9,7 +9,11 @@ description: Castalia Institute — Magister of Artificial Intelligence in Marke
 
 > Marketing is a world model with attention, trust, and measurable persuasion.
 
-Program content in this repository is authored as **MyST Markdown** (`.md`): CommonMark with optional roles, directives, cross-references, and executable notebooks where courses require it. Build a browsable site locally with the [MyST CLI](https://mystmd.org/guide) (`myst start`).
+## Canonical project
+
+This book is the **single source of truth** for Mag.AI-Marketing narrative and curriculum. Pages listed in `myst.yml` (`project.toc`) are authoritative. **Derived** from them: static site builds, document exports (PDF/Word/JATS), and packaging into **iNQspace** for teaching (students still *execute* notebooks and simulations in iNQspace). The GitHub `README.md` is intentionally outside this build — it only orients clones and tooling.
+
+Author in **MyST Markdown** (`.md`) with optional roles and directives; keep **Jupyter notebooks** as `.ipynb` where computation is primary. Preview with [MyST CLI](https://mystmd.org/guide) (`myst start`).
 
 ## Quick links
 

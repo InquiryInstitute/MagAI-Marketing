@@ -1,2 +1,3 @@
-# Optional: build / preview MyST site (https://mystmd.org/guide/installing)
+# MyST CLI — builds the canonical site from myst.yml + sources (single source of truth).
+# https://mystmd.org/guide/installing
 mystmd>=1.0

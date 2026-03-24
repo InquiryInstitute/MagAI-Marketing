@@ -26,6 +26,8 @@
 
 Syllabi, lectures, and program documentation are authored in **MyST Markdown** — portable, structured text that supports rich publishing (web, print, exports) from the same source files. Narrative lives in MyST; runnable work lives in iNQspace.
 
+**Derivation:** Public pages, curriculum, and course Markdown are **canonical** in the MyST project (`myst.yml` + sources). Sites, exports, and iNQspace teaching materials **derive** from that tree — they are not edited as separate “versions of truth.”
+
 ---
 
 ## What you build (not what you memorize)

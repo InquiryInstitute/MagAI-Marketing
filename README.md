@@ -6,109 +6,57 @@
 
 ---
 
-## What Is This?
+## Source of truth: MyST
 
-Mag.AI-Marketing treats marketing not as a bag of tactics, but as a domain of **formalizable, simulatable worlds**: audiences, messages, channels, and outcomes you can build, perturb, and measure before you spend real attention and budget.
+**All program narrative, curriculum, public pages, and course Markdown are authored inside the MyST project** defined by [`myst.yml`](myst.yml) and built with the [MyST CLI](https://mystmd.org/guide). That tree is **canonical**. Everything else **derives** from it:
 
-This is not a traditional “digital marketing certificate.” Graduates are not campaign button-pushers — they are **designers of influence under constraint**.
-
-### Core Loop
-
-```
-Define audience world → Simulate message & channel dynamics → Perturb → Reflect → Revise → Deploy
-```
-
-### Technology Stack
-
-| System | Role |
+| Derived surface | Role |
 | --- | --- |
-| **PTAH** | World builder: ontology, rules, simulation |
-| **SAMWISE** | Reflective AI: tracks learning, critiques assumptions |
-| **AI Faculty** | In voce: competing worldviews (positioning, behavioral economics, narrative, ethics) |
-| **iNQspace** | Primary teaching & lab environment: notebooks, simulations, AI-assisted builds, artifact lineage |
+| **`myst start` / `myst build`** | Reference HTML site (`_build/`), previews |
+| **Exports** | PDF, Word, JATS, etc., from the same MyST sources ([docs](https://mystmd.org/guide/documents-exports)) |
+| **iNQspace** | Teaching and execution: notebooks, simulations, lineage — **content** is ingested from these MyST-authored paths; labs run there |
+| **This `README.md`** | Orientation and clone/build commands only — **not** a second curriculum. Excluded from the MyST build. |
 
-**How we teach AI:** Instruction, practice, and assessment run through **iNQspace** — not slide-only delivery. Students work in notebooks, run scenarios, integrate models and tools, and ship traceable artifacts. PTAH-style worlds, SAMWISE reflections, and Faculty challenges all assume work that lives in (and can be reviewed from) that environment.
+Edit **`docs/`**, **`pages/`**, **`courses/`**, and **`index.md`**; list or pattern them in **`myst.yml`** → **`project.toc`**. Do not fork wording in the README.
 
-### Content format: MyST
+**Entry page for readers:** [`index.md`](index.md) (root of the built book).
 
-Narrative and curriculum source files are **MyST Markdown** (`.md`): CommonMark plus optional [MyST](https://mystmd.org/spec) roles and directives (admonitions, figures, cross-references, executable blocks). Jupyter notebooks remain `.ipynb` where computation is primary. This repo includes a root **`myst.yml`** so you can preview or export the book-style site with `myst start` or `myst build` ([MyST CLI](https://mystmd.org/guide/installing)).
+---
+
+## Teach AI (iNQspace) + author content (MyST)
+
+- **iNQspace** — where students run notebooks, simulations, and tracked artifacts.
+- **MyST** — where syllabi, lectures, program docs, and public pages live as structured Markdown.
+
+See [`docs/DESIGN.md`](docs/DESIGN.md) for architecture, including **content derivation**.
+
+---
+
+## Build the book locally
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements-docs.txt
-myst start    # preview at http://localhost:3000 (or next free port)
-# myst build  # static site under _build/
+myst start    # http://localhost:3000 (or next free port)
+# myst build  # static site → _build/
 ```
 
 ---
 
-## Program Structure
-
-### 3 Terms, 18 Courses
-
-| Term | Focus | Courses |
-| --- | --- | --- |
-| **I** | Audience & Message Worlds | AIN-M6001 – AIN-M6006 |
-| **II** | Campaign & Growth Worlds | AIN-M6101 – AIN-M6106 |
-| **III** | Strategic Marketing Worlds | AIN-M6201 – AIN-M6206 |
-
-### Credential Path
-
-```
-Bac.AI → Lic.AI → Mag.AI-M
-```
-
----
-
-## Repository Structure
+## Repository layout (canonical files)
 
 ```
 MagAI-Marketing/
-├── myst.yml                   # MyST project config (site + table of contents)
-├── index.md                   # MyST landing page (book-theme root)
-├── docs/
-│   ├── DESIGN.md              # Program design document
-│   ├── CURRICULUM_FULL.md     # All 18 courses detailed
-│   └── ASSESSMENT.md          # Assessment framework and rubrics
-├── pages/                     # Public-facing / web-ready program pages
-│   ├── certificate.md
-│   ├── curriculum-at-a-glance.md
-│   └── program-overview.md
-├── courses/
-│   └── AIN-M6001/             # Personal Attention & Influence Systems (fully built)
-│       ├── SYLLABUS.md
-│       ├── lectures/
-│       ├── notebooks/
-│       └── samwise/
-└── README.md
+├── myst.yml              # Project + table of contents — governs what MyST builds
+├── index.md              # Book home (MyST)
+├── docs/                 # DESIGN, CURRICULUM_FULL, ASSESSMENT (MyST)
+├── pages/                # Public pages (MyST)
+├── courses/              # e.g. AIN-M6001 syllabus, lectures, samwise, notebooks (MyST)
+├── requirements-docs.txt # mystmd
+└── README.md             # This file — stub only (excluded from MyST)
 ```
 
----
-
-## AIN-M6001: Personal Attention & Influence Systems
-
-The first course is built end-to-end — lectures, PTAH-style notebooks, and SAMWISE hooks. It serves as:
-
-- The first course students take
-- The demo of the Mag.AI-M approach
-- The marketing asset for the program
-- The revenue entry point
-
-Students build an executable model of their own **attention budget, credibility, message–market fit, and content economics** — then run scenarios, reflect, and defend their model.
-
----
-
-## Assessment
-
-No exams. Students are evaluated on five dimensions (see `docs/ASSESSMENT.md`):
-
-1. **World Construction** — clarity of ontology, correctness of rules
-2. **Simulation Quality** — robustness, scenario coverage
-3. **Insight** — interpretation, key variables
-4. **Deployment** — real-world execution, measurable results
-5. **Iteration** — refinement over time
-
-Final credential requires a **Magisterium Thesis** (AIN-M6206): a deployed system validated by simulation with measurable outcomes.
+**Curriculum tables and course detail:** open the built site or the Markdown under `docs/` and `pages/` — do not duplicate here.
 
 ---
 

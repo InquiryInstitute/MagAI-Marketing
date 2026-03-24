@@ -2,6 +2,8 @@
 
 **Castalia Institute — Magisterium Design Document**
 
+*Authoritative copy: part of the MyST project (`myst.yml`).*
+
 ---
 
 ## I. Purpose
@@ -169,7 +171,16 @@ In practice, iNQspace provides:
 
 ### MyST Markdown (content layer)
 
-Program **content** — syllabi, lectures, public pages, design docs — is authored in **MyST Markdown** (`.md`) so materials can ship as structured documents, cross-linked sites, and exports (HTML/PDF/Word via the [MyST](https://mystmd.org) toolchain). MyST is the authoring format; **iNQspace** is where students execute notebooks, simulations, and lineage-tracked work. The repository root includes `myst.yml` and `index.md` to build a browsable reference site alongside the GitHub-native `README.md`.
+Program **content** — syllabi, lectures, public pages, design docs — is authored in **MyST Markdown** (`.md`) so materials can ship as structured documents, cross-linked sites, and exports (HTML/PDF/Word via the [MyST](https://mystmd.org) toolchain). The repository root **`myst.yml`** declares **`project.toc`**: that list is the **canonical boundary** of what the program treats as “the book.” The GitHub **`README.md`** is **outside** the MyST project on purpose: it only points here; it must not duplicate curriculum text.
+
+**Content derivation (everything flows from MyST):**
+
+1. **Author** in `.md` / `.ipynb` under paths listed or matched in `myst.yml`.
+2. **Build** with `myst start` / `myst build` — reference HTML; optional **exports** (PDF, Word, JATS) from the same sources.
+3. **Teach** in **iNQspace** by importing or syncing those paths — syllabi and lecture text are not retyped inside the lab; **execution** (notebooks, sims, lineage) lives in iNQspace.
+4. **Do not** maintain a parallel copy of curriculum in wikis, slide decks, or the README — if it is not in the MyST tree, it is not authoritative.
+
+MyST is the authoring and publishing layer; **iNQspace** is the execution layer.
 
 ### PTAH
 

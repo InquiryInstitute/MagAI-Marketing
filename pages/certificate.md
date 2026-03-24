@@ -2,6 +2,8 @@
 
 **Castalia Institute — Magister of Artificial Intelligence in Marketing**
 
+*Authoritative copy: part of the MyST project (`myst.yml`).*
+
 ---
 
 ## Credential name

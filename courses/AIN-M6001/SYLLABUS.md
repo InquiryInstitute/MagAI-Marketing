@@ -3,6 +3,8 @@
 **Term I — Mag.AI-Marketing**  
 **Castalia Institute**
 
+*Authoritative copy: part of the MyST project (`myst.yml`).*
+
 ---
 
 ## Course Overview
