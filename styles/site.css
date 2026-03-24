@@ -601,3 +601,192 @@ article .magai-program-main [data-node-type="myst:toc"] a {
     color: #5eead4;
   }
 }
+
+/* --- Full-site Magisterium shell (match https://magisterium.castalia.institute/magai/) --- */
+/* MyST defaults to a light body + stone nav; override so the book feels like the Astro hub. */
+html {
+  color-scheme: dark;
+}
+
+html.light,
+html.dark {
+  --castalia-text: #d6d3d1;
+  --castalia-text-muted: #a8a29e;
+  --castalia-border: rgba(71, 85, 105, 0.55);
+  --castalia-accent: var(--magai-gold-muted);
+  --castalia-accent-hover: var(--magai-gold-bright);
+  --castalia-quote-bg: rgba(30, 41, 59, 0.55);
+}
+
+html body {
+  background-color: var(--magai-navy-950) !important;
+  color: var(--magai-stone-300) !important;
+}
+
+/* Top bar */
+.myst-top-nav {
+  background: rgba(12, 18, 34, 0.94) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(51, 65, 85, 0.55) !important;
+  box-shadow: none !important;
+}
+
+.myst-home-link,
+.myst-home-link span {
+  font-family: var(--castalia-font-serif) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--magai-stone-100) !important;
+}
+
+.myst-top-nav-menu-button {
+  color: var(--magai-stone-300) !important;
+  border-color: rgba(71, 85, 105, 0.6) !important;
+}
+
+.myst-search-bar {
+  background: rgba(30, 41, 59, 0.55) !important;
+  border-color: rgba(71, 85, 105, 0.55) !important;
+  color: var(--magai-stone-200) !important;
+}
+
+.myst-search-bar .myst-search-text-placeholder,
+.myst-search-shortcut kbd {
+  color: var(--magai-stone-400) !important;
+  border-color: rgba(71, 85, 105, 0.6) !important;
+}
+
+.myst-theme-button {
+  border-color: rgba(212, 168, 83, 0.45) !important;
+  color: var(--magai-gold-muted) !important;
+  background: rgba(30, 41, 59, 0.4) !important;
+}
+
+.myst-theme-button:hover {
+  background: rgba(212, 168, 83, 0.12) !important;
+  color: var(--magai-gold-bright) !important;
+}
+
+.myst-action-menu-button,
+.myst-top-nav a[href*="magisterium"] {
+  border-color: rgba(212, 168, 83, 0.4) !important;
+  color: var(--magai-stone-200) !important;
+}
+
+.myst-top-nav a[href*="magisterium"]:hover {
+  background: rgba(212, 168, 83, 0.1) !important;
+  color: var(--magai-gold-bright) !important;
+}
+
+/* Sidebar / TOC */
+.myst-primary-sidebar .myst-toc a,
+.myst-primary-sidebar-toc .myst-toc-item {
+  color: var(--magai-stone-300) !important;
+}
+
+.myst-primary-sidebar .myst-toc a:hover,
+.myst-primary-sidebar .hover\:bg-slate-300\/30:hover {
+  background: rgba(30, 41, 59, 0.65) !important;
+  color: var(--magai-stone-100) !important;
+}
+
+.myst-primary-sidebar .border-b-2.lg\:hidden {
+  border-color: rgba(71, 85, 105, 0.45) !important;
+}
+
+/* Main article column — collegiate serif reading */
+article.article,
+article.content {
+  font-family: var(--castalia-font-serif);
+  color: var(--magai-stone-300);
+}
+
+article .myst-fm-block-title {
+  font-family: var(--castalia-font-serif);
+  font-weight: 700;
+  font-size: clamp(1.85rem, 1.35rem + 1.4vw, 2.35rem);
+  color: var(--magai-stone-100);
+  letter-spacing: -0.03em;
+}
+
+article h1 .heading-text,
+article h2 .heading-text,
+article h3 .heading-text {
+  font-family: var(--castalia-font-sans);
+  color: var(--magai-stone-100);
+}
+
+article h2,
+article h3 {
+  border-bottom-color: rgba(71, 85, 105, 0.45);
+}
+
+article strong {
+  color: var(--magai-stone-100);
+}
+
+article a,
+article a.link,
+article a.hover-link {
+  color: var(--magai-gold-muted) !important;
+}
+
+article a:hover,
+article a.link:hover,
+article a.hover-link:hover {
+  color: var(--magai-gold-bright) !important;
+}
+
+article blockquote {
+  border-left-color: rgba(212, 168, 83, 0.55);
+  background: rgba(30, 41, 59, 0.45);
+  color: var(--magai-stone-300);
+}
+
+article th {
+  background: rgba(30, 41, 59, 0.9) !important;
+  color: var(--magai-stone-100) !important;
+  border-color: rgba(71, 85, 105, 0.5) !important;
+}
+
+article td {
+  background: rgba(17, 24, 39, 0.35) !important;
+  color: var(--magai-stone-300) !important;
+  border-color: rgba(71, 85, 105, 0.4) !important;
+}
+
+article table tr:nth-child(even) td {
+  background: rgba(17, 24, 39, 0.55) !important;
+}
+
+article code,
+article td code {
+  background: rgba(212, 168, 83, 0.12) !important;
+  color: var(--magai-gold-bright) !important;
+}
+
+article pre {
+  border-color: rgba(71, 85, 105, 0.45) !important;
+  background: rgba(12, 18, 34, 0.65) !important;
+}
+
+/* Prev/next footer */
+.myst-footer-link {
+  background: rgba(17, 24, 39, 0.45) !important;
+  border-color: rgba(71, 85, 105, 0.45) !important;
+  color: var(--magai-stone-200) !important;
+}
+
+.myst-footer-link:hover {
+  border-color: rgba(212, 168, 83, 0.45) !important;
+  color: var(--magai-gold-bright) !important;
+}
+
+.myst-footer-link-group {
+  color: var(--magai-stone-500) !important;
+}
+
+article hr {
+  border-color: rgba(71, 85, 105, 0.45) !important;
+}
