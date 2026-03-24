@@ -51,6 +51,15 @@ jupyter-book build --site     # same site via Jupyter Book (run from repo root; 
 # jupyter-book build --pdf slides/ain-m6001_lecture01_intro.md   # example PDF export
 ```
 
+**Static HTML (GitHub Pages):** CI runs `jupyter-book build --html --ci` with `BASE_URL=/MagAI-Marketing` and publishes `_build/html`. Local preview:
+
+```bash
+BASE_URL=/MagAI-Marketing jupyter-book build --html --ci
+# open _build/html/index.html (or serve the folder)
+```
+
+**Live site (after Actions deploy):** [https://dcmcshan.github.io/MagAI-Marketing/](https://dcmcshan.github.io/MagAI-Marketing/) — workflow [Deploy GitHub Pages](.github/workflows/deploy-pages.yml). If the site is blank on first setup, enable **Settings → Pages → Build and deployment → Source: GitHub Actions** once.
+
 ---
 
 ## Repository layout (canonical files)
