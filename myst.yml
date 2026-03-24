@@ -24,30 +24,31 @@ project:
     - exercises/README.md
   toc:
     - file: index.md
-    - title: Public pages
+    # Book order: orientation → reference → first course → slides & exercises (supporting)
+    - title: Orientation
       children:
         - file: pages/program-overview.md
-        - file: pages/certificate.md
         - file: pages/curriculum-at-a-glance.md
-    - title: Program docs
+        - file: pages/certificate.md
+    - title: Program reference
       children:
         - file: docs/DESIGN.md
         - file: docs/CURRICULUM_FULL.md
-        - file: docs/ASSESSMENT.md
         - file: docs/MCP_MARKETING.md
-    - title: Slides
-      children:
-        - file: slides/ain-m6001_lecture01_intro.md
-    - title: Exercises
-      children:
-        - file: exercises/ain-m6001/warmup.md
-        - file: exercises/ain-m6001/mcp_tool_design.md
+        - file: docs/ASSESSMENT.md
     - title: AIN-M6001 — Personal Attention & Influence Systems
       children:
         - file: courses/AIN-M6001/SYLLABUS.md
         - pattern: courses/AIN-M6001/lectures/*.md
         - pattern: courses/AIN-M6001/samwise/*.md
         - pattern: courses/AIN-M6001/notebooks/*.ipynb
+    - title: Slides (instructor)
+      children:
+        - file: slides/ain-m6001_lecture01_intro.md
+    - title: Exercises
+      children:
+        - file: exercises/ain-m6001/warmup.md
+        - file: exercises/ain-m6001/mcp_tool_design.md
 site:
   template: book-theme
   actions:

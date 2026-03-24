@@ -9,6 +9,22 @@ description: Castalia Institute — Magister of Artificial Intelligence in Marke
 
 > Marketing is a world model with attention, trust, and measurable persuasion.
 
+## How to read this book
+
+1. **Orientation** — [Program overview](pages/program-overview.md), [curriculum at a glance](pages/curriculum-at-a-glance.md), [certificate & graduate toolbox](pages/certificate.md).
+2. **Program reference** — [Design](docs/DESIGN.md), [full curriculum](docs/CURRICULUM_FULL.md) (incl. **AI literacy spine**), [MCP & marketing tools](docs/MCP_MARKETING.md), [assessment](docs/ASSESSMENT.md).
+3. **First course (AIN-M6001)** — [Syllabus](courses/AIN-M6001/SYLLABUS.md), then lectures → notebooks → SAMWISE in the sidebar order.
+4. **Slides & exercises** — Instructor [slides](slides/ain-m6001_lecture01_intro.md) and [exercise](exercises/ain-m6001/warmup.md) banks sit after the course block; they **support** the course, not replace it.
+
+Use the **left navigation** or the project outline below.
+
+:::{toc}
+:context: project
+:depth: 2
+:::
+
+---
+
 ## Canonical project
 
 This book is the **single source of truth** for Mag.AI-Marketing narrative and curriculum. Pages listed in `myst.yml` (`project.toc`) are authoritative. **Derived** from them: static site builds, document exports (PDF/Word/JATS), and packaging into **iNQspace** for teaching (students still *execute* notebooks and simulations in iNQspace). The GitHub `README.md` is intentionally outside this build — it only orients clones and tooling.

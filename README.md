@@ -57,7 +57,7 @@ jupyter-book build --site     # same site via Jupyter Book (run from repo root; 
 
 ```
 MagAI-Marketing/
-├── myst.yml              # Project + table of contents — governs Jupyter Book / MyST builds
+├── myst.yml              # Book TOC: Orientation → Program reference → AIN-M6001 → Slides → Exercises
 ├── index.md              # Book home (MyST)
 ├── docs/                 # DESIGN, CURRICULUM_FULL, ASSESSMENT, MCP_MARKETING (MyST)
 ├── pages/                # Public pages (MyST)
