@@ -51,14 +51,16 @@ jupyter-book build --site     # same site via Jupyter Book (run from repo root; 
 # jupyter-book build --pdf slides/ain-m6001_lecture01_intro.md   # example PDF export
 ```
 
-**Static HTML (GitHub Pages):** CI runs `jupyter-book build --html --ci` with `BASE_URL=/MagAI-Marketing` and publishes `_build/html`. Local preview:
+**Canonical public site (Magisterium):** the built book is published by [InquiryInstitute/magisterium](https://github.com/InquiryInstitute/magisterium) CI into **`/magai/marketing/`** on [magisterium.castalia.institute](https://magisterium.castalia.institute/magai/marketing/). See [magisterium/docs/MAG_AI_PROGRAMS.md](https://github.com/InquiryInstitute/magisterium/blob/main/docs/MAG_AI_PROGRAMS.md).
+
+**Local static HTML preview** (same `BASE_URL` as production):
 
 ```bash
-BASE_URL=/MagAI-Marketing jupyter-book build --html --ci
+BASE_URL=/magai/marketing jupyter-book build --html --ci
 # open _build/html/index.html (or serve the folder)
 ```
 
-**Live site:** [https://inquiryinstitute.github.io/MagAI-Marketing/](https://inquiryinstitute.github.io/MagAI-Marketing/) — workflow [Deploy GitHub Pages](.github/workflows/deploy-pages.yml). Pushes to `main` deploy automatically. New forks: enable **Settings → Pages → Source: GitHub Actions** once if deploy returns `HttpError: Not Found`.
+Or use the magisterium helper (expects this repo as a sibling of `magisterium/`): `../magisterium/scripts/build-magai-marketing-book.sh`.
 
 ---
 

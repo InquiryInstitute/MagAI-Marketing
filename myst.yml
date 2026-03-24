@@ -6,6 +6,7 @@
 # SINGLE SOURCE OF TRUTH
 # Everything in project.toc is authoritative. Derive from this tree — do not maintain a parallel copy:
 #   • Static site / exports: myst build or jupyter-book build --site → _build/
+#   • Canonical public HTML: magisterium.castalia.institute/magai/marketing/ (BASE_URL=/magai/marketing)
 #   • iNQspace: import or sync course text + notebooks from these paths (execution stays in iNQspace)
 # README.md is excluded here on purpose: GitHub landing stub only; it points to this project.
 version: 1
