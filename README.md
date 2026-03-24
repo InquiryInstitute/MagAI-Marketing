@@ -58,7 +58,7 @@ BASE_URL=/MagAI-Marketing jupyter-book build --html --ci
 # open _build/html/index.html (or serve the folder)
 ```
 
-**Live site (after Actions deploy):** [https://dcmcshan.github.io/MagAI-Marketing/](https://dcmcshan.github.io/MagAI-Marketing/) — workflow [Deploy GitHub Pages](.github/workflows/deploy-pages.yml). If the site is blank on first setup, enable **Settings → Pages → Build and deployment → Source: GitHub Actions** once.
+**Live site:** [https://dcmcshan.github.io/MagAI-Marketing/](https://dcmcshan.github.io/MagAI-Marketing/) — workflow [Deploy GitHub Pages](.github/workflows/deploy-pages.yml). Pushes to `main` deploy automatically. If you fork this repo, enable **Settings → Pages → Source: GitHub Actions** once (the first deploy failed with `HttpError: Not Found` until Pages was turned on).
 
 ---
 
