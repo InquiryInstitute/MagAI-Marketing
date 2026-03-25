@@ -23,6 +23,8 @@ Each course is published as **its own book** (separate site). The table below li
 
 **Technical spine:** Across all terms, the program weaves in **AI literacy** (evaluation, grounding, retrieval, generative workflows, scoped tooling). That thread is spelled out in the [full curriculum](../docs/CURRICULUM_FULL.md) under *AI literacy spine*.
 
+**Narrative overview:** For a readable tour of every course in order, see **[Full curriculum in prose](../docs/CURRICULUM_OVERVIEW_PROSE.md)** (also linked from each course book after the syllabus).
+
 ---
 
 ## Term I — Audience & Message Worlds
@@ -73,6 +75,7 @@ Each course is published as **its own book** (separate site). The table below li
 ## Where to go next
 
 - **All course books (index):** [Course sites](../catalog.md)  
+- **Full curriculum in prose** (every course, narrative): [Full curriculum in prose](../docs/CURRICULUM_OVERVIEW_PROSE.md)  
 - **Course-by-course detail** (artifacts, AI systems, prerequisites): [Full curriculum](../docs/CURRICULUM_FULL.md)  
 - **How you’re assessed:** [Assessment framework](../docs/ASSESSMENT.md)  
 - **Credential and graduate toolbox:** [Certificate](./certificate.md)  

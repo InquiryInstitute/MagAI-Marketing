@@ -4,6 +4,8 @@
 
 *Authoritative copy: part of the MyST project (`myst.yml`). Do not maintain a separate curriculum elsewhere.*
 
+For a **narrative walkthrough** of every course in order, see [`CURRICULUM_OVERVIEW_PROSE.md`](CURRICULUM_OVERVIEW_PROSE.md). This document remains the **spec**: artifacts, prerequisites, and AI systems.
+
 This document summarizes all **18 courses** across **3 terms**. Each entry states what the student **builds**, **why it matters**, and which **AI systems** support the work.
 
 **Delivery:** Students learn and practice AI primarily in **iNQspace** — notebooks, simulations, and artifact lineage — aligned with Castalia’s “build worlds, don’t only discuss them” standard.

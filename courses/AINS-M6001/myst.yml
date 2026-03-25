@@ -12,6 +12,7 @@ project:
   exclude: []
   toc:
     - file: SYLLABUS.md
+    - file: ../../docs/CURRICULUM_OVERVIEW_PROSE.md
     - pattern: lectures/*.md
     - pattern: samwise/*.md
     - pattern: notebooks/*.ipynb

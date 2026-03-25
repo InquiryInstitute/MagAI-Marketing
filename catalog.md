@@ -28,4 +28,4 @@ Each **AINS-M** course has its **own MyST book** (syllabus, lectures, notebooks 
 | III | [AINS-M6205 — Ethics, Influence & Control](ains-m6205/) | |
 | III | [AINS-M6206 — Magisterium Thesis (Marketing)](ains-m6206/) | Capstone |
 
-**Program hub** (this site’s home): [Mag.AI-Marketing](index.md) · [Curriculum overview](pages/curriculum-at-a-glance.md) · [Full curriculum](docs/CURRICULUM_FULL.md)
+**Program hub** (this site’s home): [Mag.AI-Marketing](index.md) · [Curriculum overview](pages/curriculum-at-a-glance.md) · [Full curriculum in prose](docs/CURRICULUM_OVERVIEW_PROSE.md) · [Full curriculum (spec)](docs/CURRICULUM_FULL.md)

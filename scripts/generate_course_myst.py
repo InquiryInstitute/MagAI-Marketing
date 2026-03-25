@@ -40,6 +40,7 @@ def myst_yaml(code: str, title: str, description: str) -> str:
     toc_lines = [
         "  toc:",
         "    - file: SYLLABUS.md",
+        "    - file: ../../docs/CURRICULUM_OVERVIEW_PROSE.md",
         "    - pattern: lectures/*.md",
     ]
     if has_sw:

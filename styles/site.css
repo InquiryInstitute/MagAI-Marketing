@@ -1108,6 +1108,45 @@ html:not(.light) .myst-primary-sidebar-pointer {
   background-color: rgba(10, 14, 26, 0.98) !important;
 }
 
+/*
+ * Mobile / tablet (< xl): MyST hides the primary nav panel with `hidden` (no motion).
+ * Replace with a left-edge slide so the TOC feels like a drawer from the left.
+ * (Desktop xl+ is unchanged — theme uses the grid column there.)
+ */
+@media (max-width: 1279px) {
+  .myst-primary-sidebar {
+    left: 0;
+    right: auto;
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+    will-change: transform;
+  }
+
+  .myst-primary-sidebar.hidden {
+    display: flex !important;
+    flex-direction: column;
+    transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .myst-primary-sidebar:not(.hidden) {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    pointer-events: auto;
+    box-shadow: 8px 0 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .myst-navigation-overlay {
+    transition: opacity 0.25s ease;
+  }
+}
+
+@media (max-width: 1279px) and (prefers-reduced-motion: reduce) {
+  .myst-primary-sidebar {
+    transition: none;
+  }
+}
+
 /* Right-rail / margin TOC strip if present */
 [class*="col-margin"] {
   background-color: transparent !important;

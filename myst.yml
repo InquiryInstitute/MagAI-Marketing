@@ -26,6 +26,7 @@ project:
     - title: Program reference
       children:
         - file: docs/DESIGN.md
+        - file: docs/CURRICULUM_OVERVIEW_PROSE.md
         - file: docs/CURRICULUM_FULL.md
         - file: docs/MCP_MARKETING.md
         - file: docs/ASSESSMENT.md
