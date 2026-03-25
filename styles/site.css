@@ -867,13 +867,16 @@ article .magai-program-main [data-node-type="myst:toc"] a {
 }
 
 /* --- Full-site Magisterium shell (match https://magisterium.castalia.institute/magai/) --- */
-/* MyST defaults to a light body + stone nav; override so the book feels like the Astro hub. */
-html {
+/* MyST theme toggle sets html.light or html.dark; scope dark chrome to :not(.light) so light mode covers the whole page. */
+html:not(.light) {
   color-scheme: dark;
 }
 
-html.light,
-html.dark {
+html.light {
+  color-scheme: light;
+}
+
+html:not(.light) {
   --castalia-text: #d6d3d1;
   --castalia-text-muted: #a8a29e;
   --castalia-border: rgba(71, 85, 105, 0.55);
@@ -882,13 +885,27 @@ html.dark {
   --castalia-quote-bg: rgba(30, 41, 59, 0.55);
 }
 
-html body {
+html.light {
+  --castalia-text: #1a1a1f;
+  --castalia-text-muted: #4b5563;
+  --castalia-border: #e5e7eb;
+  --castalia-accent: #0f766e;
+  --castalia-accent-hover: #0d9488;
+  --castalia-quote-bg: #f8fafc;
+}
+
+html:not(.light) body {
   background-color: var(--magai-navy-950) !important;
   color: var(--magai-stone-300) !important;
 }
 
-/* Top bar */
-.myst-top-nav {
+html.light body {
+  background-color: #f8fafc !important;
+  color: #334155 !important;
+}
+
+/* Top bar — dark */
+html:not(.light) .myst-top-nav {
   background: rgba(12, 18, 34, 0.94) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -896,77 +913,77 @@ html body {
   box-shadow: none !important;
 }
 
-.myst-home-link,
-.myst-home-link span {
+html:not(.light) .myst-home-link,
+html:not(.light) .myst-home-link span {
   font-family: var(--castalia-font-serif) !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
   color: var(--magai-stone-100) !important;
 }
 
-.myst-top-nav-menu-button {
+html:not(.light) .myst-top-nav-menu-button {
   color: var(--magai-stone-300) !important;
   border-color: rgba(71, 85, 105, 0.6) !important;
 }
 
-.myst-search-bar {
+html:not(.light) .myst-search-bar {
   background: rgba(30, 41, 59, 0.55) !important;
   border-color: rgba(71, 85, 105, 0.55) !important;
   color: var(--magai-stone-200) !important;
 }
 
-.myst-search-bar .myst-search-text-placeholder,
-.myst-search-shortcut kbd {
+html:not(.light) .myst-search-bar .myst-search-text-placeholder,
+html:not(.light) .myst-search-shortcut kbd {
   color: var(--magai-stone-400) !important;
   border-color: rgba(71, 85, 105, 0.6) !important;
 }
 
-.myst-theme-button {
+html:not(.light) .myst-theme-button {
   border-color: rgba(212, 168, 83, 0.45) !important;
   color: var(--magai-gold-muted) !important;
   background: rgba(30, 41, 59, 0.4) !important;
 }
 
-.myst-theme-button:hover {
+html:not(.light) .myst-theme-button:hover {
   background: rgba(212, 168, 83, 0.12) !important;
   color: var(--magai-gold-bright) !important;
 }
 
-.myst-action-menu-button,
-.myst-top-nav a[href*="magisterium"] {
+html:not(.light) .myst-action-menu-button,
+html:not(.light) .myst-top-nav a[href*="magisterium"] {
   border-color: rgba(212, 168, 83, 0.4) !important;
   color: var(--magai-stone-200) !important;
 }
 
-.myst-top-nav a[href*="magisterium"]:hover {
+html:not(.light) .myst-top-nav a[href*="magisterium"]:hover {
   background: rgba(212, 168, 83, 0.1) !important;
   color: var(--magai-gold-bright) !important;
 }
 
-/* Sidebar / TOC */
-.myst-primary-sidebar .myst-toc a,
-.myst-primary-sidebar-toc .myst-toc-item {
+/* Sidebar / TOC — dark */
+html:not(.light) .myst-primary-sidebar .myst-toc a,
+html:not(.light) .myst-primary-sidebar-toc .myst-toc-item {
   color: var(--magai-stone-300) !important;
 }
 
-.myst-primary-sidebar .myst-toc a:hover,
-.myst-primary-sidebar .hover\:bg-slate-300\/30:hover {
+html:not(.light) .myst-primary-sidebar .myst-toc a:hover,
+html:not(.light) .myst-primary-sidebar .hover\:bg-slate-300\/30:hover {
   background: rgba(30, 41, 59, 0.65) !important;
   color: var(--magai-stone-100) !important;
 }
 
-.myst-primary-sidebar .border-b-2.lg\:hidden {
+html:not(.light) .myst-primary-sidebar .border-b-2.lg\:hidden {
   border-color: rgba(71, 85, 105, 0.45) !important;
 }
 
-/* Main article column — collegiate serif reading */
-article.article,
-article.content {
+/* Main article column — dark Magisterium reading (when not in light mode) */
+html:not(.light) article.article,
+html:not(.light) article.content {
   font-family: var(--castalia-font-serif);
   color: var(--magai-stone-300);
 }
 
-article .myst-fm-block-title {
+html:not(.light) article .myst-fm-block-title {
   font-family: var(--castalia-font-serif);
   font-weight: 700;
   font-size: clamp(1.85rem, 1.35rem + 1.4vw, 2.35rem);
@@ -974,113 +991,111 @@ article .myst-fm-block-title {
   letter-spacing: -0.03em;
 }
 
-article h1 .heading-text,
-article h2 .heading-text,
-article h3 .heading-text {
+html:not(.light) article h1 .heading-text,
+html:not(.light) article h2 .heading-text,
+html:not(.light) article h3 .heading-text {
   font-family: var(--castalia-font-sans);
   color: var(--magai-stone-100);
 }
 
-article h2,
-article h3 {
+html:not(.light) article h2,
+html:not(.light) article h3 {
   border-bottom-color: rgba(71, 85, 105, 0.45);
 }
 
-article strong {
+html:not(.light) article strong {
   color: var(--magai-stone-100);
 }
 
-article a,
-article a.link,
-article a.hover-link {
+html:not(.light) article a,
+html:not(.light) article a.link,
+html:not(.light) article a.hover-link {
   color: var(--magai-gold-muted) !important;
 }
 
-article a:hover,
-article a.link:hover,
-article a.hover-link:hover {
+html:not(.light) article a:hover,
+html:not(.light) article a.link:hover,
+html:not(.light) article a.hover-link:hover {
   color: var(--magai-gold-bright) !important;
 }
 
 /* Hub CTAs are <a class="link magai-btn …"> — global gold link color must not apply on buttons. */
-article a.magai-btn--primary,
-article .magai-btn.magai-btn--primary {
+html:not(.light) article a.magai-btn--primary,
+html:not(.light) article .magai-btn.magai-btn--primary {
   color: var(--magai-navy-950) !important;
 }
 
-article a.magai-btn--primary:hover,
-article .magai-btn.magai-btn--primary:hover {
+html:not(.light) article a.magai-btn--primary:hover,
+html:not(.light) article .magai-btn.magai-btn--primary:hover {
   color: var(--magai-navy-950) !important;
 }
 
-article a.magai-btn--ghost,
-article .magai-btn.magai-btn--ghost {
+html:not(.light) article a.magai-btn--ghost,
+html:not(.light) article .magai-btn.magai-btn--ghost {
   color: var(--magai-stone-100) !important;
 }
 
-article a.magai-btn--ghost:hover,
-article .magai-btn.magai-btn--ghost:hover {
+html:not(.light) article a.magai-btn--ghost:hover,
+html:not(.light) article .magai-btn.magai-btn--ghost:hover {
   color: var(--magai-gold-bright) !important;
 }
 
-article blockquote {
+html:not(.light) article blockquote {
   border-left-color: rgba(212, 168, 83, 0.55);
   background: rgba(30, 41, 59, 0.45);
   color: var(--magai-stone-300);
 }
 
-article th {
+html:not(.light) article th {
   background: rgba(30, 41, 59, 0.9) !important;
   color: var(--magai-stone-100) !important;
   border-color: rgba(71, 85, 105, 0.5) !important;
 }
 
-article td {
+html:not(.light) article td {
   background: rgba(17, 24, 39, 0.35) !important;
   color: var(--magai-stone-300) !important;
   border-color: rgba(71, 85, 105, 0.4) !important;
 }
 
-article table tr:nth-child(even) td {
+html:not(.light) article table tr:nth-child(even) td {
   background: rgba(17, 24, 39, 0.55) !important;
 }
 
-article code,
-article td code {
+html:not(.light) article code,
+html:not(.light) article td code {
   background: rgba(212, 168, 83, 0.12) !important;
   color: var(--magai-gold-bright) !important;
 }
 
-article pre {
+html:not(.light) article pre {
   border-color: rgba(71, 85, 105, 0.45) !important;
   background: rgba(12, 18, 34, 0.65) !important;
 }
 
-/* Prev/next footer */
-.myst-footer-link {
+/* Prev/next footer — dark */
+html:not(.light) .myst-footer-link {
   background: rgba(17, 24, 39, 0.45) !important;
   border-color: rgba(71, 85, 105, 0.45) !important;
   color: var(--magai-stone-200) !important;
 }
 
-.myst-footer-link:hover {
+html:not(.light) .myst-footer-link:hover {
   border-color: rgba(212, 168, 83, 0.45) !important;
   color: var(--magai-gold-bright) !important;
 }
 
-.myst-footer-link-group {
+html:not(.light) .myst-footer-link-group {
   color: var(--magai-stone-500) !important;
 }
 
-article hr {
+html:not(.light) article hr {
   border-color: rgba(71, 85, 105, 0.45) !important;
 }
 
-/* --- Hub parity: override MyST Tailwind brown stone-900 shell (bg on body / chrome) --- */
-/* Template: body class="… bg-white dark:bg-stone-900" — stone-900 reads brown; force Magisterium navy */
-html body.m-0,
-html.dark body,
-html.light body {
+/* --- Hub parity: MyST body shell — force Magisterium navy when dark --- */
+html:not(.light) body.m-0,
+html:not(.light) body {
   background-color: var(--magai-navy-950) !important;
 }
 
@@ -1088,12 +1103,410 @@ main.article-grid {
   background-color: transparent !important;
 }
 
-.myst-primary-sidebar,
-.myst-primary-sidebar-pointer {
+html:not(.light) .myst-primary-sidebar,
+html:not(.light) .myst-primary-sidebar-pointer {
   background-color: rgba(10, 14, 26, 0.98) !important;
 }
 
 /* Right-rail / margin TOC strip if present */
 [class*="col-margin"] {
   background-color: transparent !important;
+}
+
+/* --- Light mode — full page (header, sidebar, article, footer) --- */
+html.light .myst-top-nav {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04) !important;
+}
+
+html.light .myst-home-link,
+html.light .myst-home-link span {
+  font-family: var(--castalia-font-serif) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: #0f172a !important;
+}
+
+html.light .myst-top-nav-menu-button {
+  color: #475569 !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .myst-search-bar {
+  background: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+html.light .myst-search-bar .myst-search-text-placeholder,
+html.light .myst-search-shortcut kbd {
+  color: #64748b !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light .myst-theme-button {
+  border-color: rgba(15, 118, 110, 0.35) !important;
+  color: #0f766e !important;
+  background: #f0fdfa !important;
+}
+
+html.light .myst-theme-button:hover {
+  background: #ccfbf1 !important;
+  color: #0d9488 !important;
+}
+
+html.light .myst-action-menu-button,
+html.light .myst-top-nav a[href*="magisterium"] {
+  border-color: rgba(15, 118, 110, 0.35) !important;
+  color: #334155 !important;
+}
+
+html.light .myst-top-nav a[href*="magisterium"]:hover {
+  background: rgba(15, 118, 110, 0.08) !important;
+  color: #0f766e !important;
+}
+
+html.light .myst-primary-sidebar .myst-toc a,
+html.light .myst-primary-sidebar-toc .myst-toc-item {
+  color: #475569 !important;
+}
+
+html.light .myst-primary-sidebar .myst-toc a:hover,
+html.light .myst-primary-sidebar .hover\:bg-slate-300\/30:hover {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html.light .myst-primary-sidebar .border-b-2.lg\:hidden {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .myst-primary-sidebar,
+html.light .myst-primary-sidebar-pointer {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0;
+}
+
+html.light article.article,
+html.light article.content {
+  font-family: var(--castalia-font-serif);
+  color: #334155;
+}
+
+html.light article .myst-fm-block-title {
+  color: #0f172a;
+}
+
+html.light article h1 .heading-text,
+html.light article h2 .heading-text,
+html.light article h3 .heading-text {
+  font-family: var(--castalia-font-sans);
+  color: #0f172a;
+}
+
+html.light article h2,
+html.light article h3 {
+  border-bottom-color: #e2e8f0;
+}
+
+html.light article strong {
+  color: #0f172a;
+}
+
+html.light article a:not(.magai-btn),
+html.light article a.link:not(.magai-btn),
+html.light article a.hover-link:not(.magai-btn) {
+  color: #0f766e !important;
+}
+
+html.light article a:not(.magai-btn):hover,
+html.light article a.link:not(.magai-btn):hover,
+html.light article a.hover-link:not(.magai-btn):hover {
+  color: #0d9488 !important;
+}
+
+html.light article a.magai-btn--primary,
+html.light article .magai-btn.magai-btn--primary {
+  color: var(--magai-navy-950) !important;
+}
+
+html.light article a.magai-btn--ghost,
+html.light article .magai-btn.magai-btn--ghost {
+  color: #0f172a !important;
+}
+
+html.light article blockquote {
+  border-left-color: rgba(15, 118, 110, 0.45);
+  background: #f1f5f9;
+  color: #475569;
+}
+
+html.light article th {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light article td {
+  background: #ffffff !important;
+  color: #334155 !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light article table tr:nth-child(even) td {
+  background: #f8fafc !important;
+}
+
+html.light article code,
+html.light article td code {
+  background: rgba(15, 118, 110, 0.1) !important;
+  color: #0f766e !important;
+}
+
+html.light article pre {
+  border-color: #e2e8f0 !important;
+  background: #f1f5f9 !important;
+}
+
+html.light .myst-footer-link {
+  background: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #334155 !important;
+}
+
+html.light .myst-footer-link:hover {
+  border-color: rgba(15, 118, 110, 0.35) !important;
+  color: #0f766e !important;
+}
+
+html.light .myst-footer-link-group {
+  color: #64748b !important;
+}
+
+html.light article hr {
+  border-color: #e2e8f0 !important;
+}
+
+/* Marketing hub blocks — light */
+html.light article .magai-program-hero::before {
+  background: radial-gradient(ellipse 120% 100% at 50% 0%, #e2e8f0 0%, #f8fafc 72%);
+}
+
+html.light article .magai-hero-sub,
+html.light article .magai-hero-copy > h2 + p {
+  color: #334155;
+}
+
+html.light article .magai-hero-kicker,
+html.light article .magai-hero-copy > h2 + p + p {
+  color: #475569;
+}
+
+html.light article .magai-hero-title,
+html.light article .magai-hero-copy > h2:first-of-type {
+  color: #0f172a;
+}
+
+html.light article .magai-hero-quote {
+  background: #f1f5f9;
+  border-left-color: rgba(15, 118, 110, 0.45);
+  color: #334155;
+}
+
+html.light article .magai-hero-quote strong {
+  color: #0f172a;
+}
+
+html.light article .magai-btn--ghost {
+  background: rgba(15, 23, 42, 0.06) !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light article .magai-stat-strip {
+  border-color: #e2e8f0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+html.light article .magai-prose-highlight {
+  color: #334155;
+  border-left-color: rgba(15, 118, 110, 0.45);
+}
+
+html.light article .magai-pillar-card {
+  border-color: #e2e8f0;
+  background: #ffffff;
+}
+
+html.light article .magai-pillar-title,
+html.light article .magai-pillar-body > h3 {
+  color: #0f172a;
+}
+
+html.light article .magai-pillar-body p {
+  color: #334155;
+}
+
+html.light article .magai-pillar-body p strong {
+  color: #0f172a;
+}
+
+html.light article .magai-program-main {
+  background: #f8fafc;
+  border-top-color: #e2e8f0;
+}
+
+html.light article .magai-program-main h2 {
+  color: #0f172a;
+  border-bottom-color: #e2e8f0;
+}
+
+html.light article .magai-program-main h2.magai-section-label {
+  color: #64748b;
+}
+
+html.light article .magai-program-main p,
+html.light article .magai-program-main li {
+  color: #334155;
+}
+
+html.light article .magai-program-main strong {
+  color: #0f172a;
+}
+
+html.light article .magai-program-main a {
+  color: #0f766e;
+}
+
+html.light article .magai-program-main a:hover {
+  color: #0d9488;
+}
+
+html.light article .magai-program-main hr {
+  border-top-color: #e2e8f0;
+}
+
+html.light article .magai-program-main th {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+
+html.light article .magai-program-main td {
+  color: #334155;
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+html.light article .magai-program-main table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+html.light article .magai-program-main td a {
+  color: #0f766e;
+}
+
+html.light article .magai-program-main td code,
+html.light article .magai-program-main p code {
+  background: rgba(15, 118, 110, 0.1);
+  color: #0f766e;
+}
+
+html.light article ul.magai-link-rows {
+  border-color: #e2e8f0;
+  background: #ffffff;
+}
+
+html.light article ul.magai-link-rows li {
+  border-bottom-color: #e2e8f0;
+}
+
+html.light article ul.magai-link-rows li:hover {
+  background: #f1f5f9;
+}
+
+html.light article .magai-link-rows-title,
+html.light article .magai-link-rows-title a {
+  color: #0f172a;
+}
+
+html.light article .magai-link-rows-title a:hover {
+  color: #0f766e;
+}
+
+html.light article .magai-link-rows-meta {
+  color: #64748b;
+}
+
+html.light article .magai-link-rows-meta a,
+html.light article .magai-link-rows-actions a {
+  color: #0f766e;
+}
+
+html.light article .magai-related-panel {
+  border-color: #e2e8f0;
+  background: #ffffff;
+}
+
+html.light article .magai-related-title {
+  color: #0f172a;
+}
+
+html.light article .magai-related-text {
+  color: #475569;
+}
+
+html.light article .magai-related-text a {
+  color: #0f766e;
+}
+
+html.light article .magai-program-main .admonition,
+html.light article .magai-program-main [class*="admonition"] {
+  border-color: #e2e8f0;
+  background: #f8fafc;
+  color: #334155;
+}
+
+html.light article .magai-program-main .margin-target,
+html.light article .magai-program-main [data-node-type="myst:toc"] {
+  border-color: #e2e8f0;
+  background: #f1f5f9;
+}
+
+html.light article .magai-program-main .margin-target a,
+html.light article .magai-program-main [data-node-type="myst:toc"] a {
+  color: #0f766e;
+}
+
+html.light article .magai-back-link {
+  color: #64748b;
+}
+
+html.light article .magai-back-link:hover {
+  color: #0f766e;
+}
+
+html.light article .magai-eyebrow {
+  border-color: rgba(15, 118, 110, 0.35);
+  background: rgba(15, 118, 110, 0.08);
+  color: #0f766e;
+}
+
+html.light article .magai-photo-credit {
+  color: #64748b;
+}
+
+html.light article .magai-photo-credit a {
+  color: #0f766e;
+}
+
+html.light article .magai-stat strong {
+  color: #0f766e;
+}
+
+html.light article .magai-stat span {
+  color: #64748b;
 }
