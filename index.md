@@ -1,6 +1,6 @@
 ---
 title: Mag.AI-Marketing
-description: Graduate-level AI for marketing leaders — measurable campaigns, governed toolchains, and work you can defend to the C-suite and compliance.
+description: AI leadership for marketers — judgment, measurement, and governed tools. Built for people who will never be programmers but must lead teams and vendors with credibility.
 ---
 
 <div class="magai-program-landing">
@@ -11,10 +11,10 @@ description: Graduate-level AI for marketing leaders — measurable campaigns, g
 <a href="/magai/" class="magai-back-link">MagAI programs</a>
 <span class="magai-eyebrow">Castalia · School of AI</span>
 <h2 class="magai-hero-title">Mag.AI-Marketing</h2>
-<p class="magai-hero-sub">The Magister program for marketers who ship — not slide decks that age in a week.</p>
-<p class="magai-hero-kicker">Turn AI from a buzzword into <strong>governed capability</strong>: simulatable audience and channel dynamics, retrieval-grounded content workflows, and MCP-connected stacks your org can audit.</p>
+<p class="magai-hero-sub">For marketing leaders who built their careers on judgment, relationships, and results — and need AI to strengthen that craft, not replace it.</p>
+<p class="magai-hero-kicker">You do <strong>not</strong> need to become a software engineer. You <strong>do</strong> need to ask the right questions, spot weak claims, and connect AI work to <strong>outcomes your CFO and your customers can trust</strong>: simulatable audience dynamics, grounded content workflows, and tool connections your org can audit.</p>
 <blockquote class="magai-hero-quote">
-<p>Your stakeholders do not want “AI fluency.” They want <strong>forecastable impact</strong>, <strong>clear lineage</strong>, and <strong>defensible decisions</strong> when budgets and reputations are on the line.</p>
+<p>Maybe you earned a business degree at a smaller school, climbed through brand or demand gen, and you’re tired of either <strong>pretending</strong> to understand AI or <strong>deferring</strong> entirely to vendors. Castalia meets you there: <strong>rigor without theater</strong> — so you can protect your team, coach stakeholders, and help others use AI without gambling the brand.</p>
 </blockquote>
 <div class="magai-hero-ctas">
 <a href="ains-m6001/" class="magai-btn magai-btn--primary">Start with AINS-M6001 →</a>
@@ -39,13 +39,15 @@ description: Graduate-level AI for marketing leaders — measurable campaigns, g
 <div class="magai-stat" role="listitem"><strong>MCP</strong><span>scoped integrations</span></div>
 </div>
 
-<p class="magai-prose-highlight">Whether you run demand gen, brand, growth, or marketing ops, you are already judged on <strong>pipeline</strong>, <strong>efficiency</strong>, and <strong>trust</strong>. Mag.AI-Marketing is built for that reality: you learn to <strong>model</strong> markets, <strong>stress-test</strong> campaigns, and <strong>connect</strong> AI workflows to real systems—with ethics and measurement wired in from day one.</p>
+<p class="magai-prose-highlight">Whether you run demand gen, brand, growth, or marketing ops, you are judged on <strong>pipeline</strong>, <strong>efficiency</strong>, and <strong>trust</strong>. Mag.AI-Marketing is for people who may never write production code but who <strong>must</strong> lead: you learn to <strong>frame</strong> markets clearly, <strong>stress-test</strong> campaigns before spend scales, and <strong>govern</strong> how AI touches data, creative, and measurement — with ethics and evidence wired in from day one.</p>
 
 ---
 
 ## If you’re new here
 
-**Mag.AI-Marketing** moves from audience and message worlds through campaigns and growth, then strategy, automation, ethics, and a **capstone thesis**. You graduate with **executable artifacts**—simulations, notebooks, deployments—not multiple-choice “AI awareness.” Readings live in these **course books**; builds and lineage live in **iNQspace** (Castalia’s lab). Faculty, cohort structure, and structured reflection (**SAMWISE** where assigned) mean you are not learning in a vacuum.
+**Mag.AI-Marketing** moves from audience and message worlds through campaigns and growth, then strategy, automation, ethics, and a **capstone thesis**. You graduate with **reviewable artifacts** — simulations, documented runs, and deployment evidence — not multiple-choice “AI awareness.” *Artifact* here means “work someone else can inspect,” not “you must ship like an engineer.” Readings live in these **course books**; builds and lineage live in **iNQspace** (Castalia’s lab). Faculty, cohort structure, and structured reflection (**SAMWISE** where assigned) mean you are not learning alone.
+
+**How this helps you help others:** When you can name tradeoffs, limits, and lineage in plain language, you become the person who **raises the floor** for your team — clearer briefs for agencies, safer handoffs to ops and IT, and fewer panic-driven tool purchases.
 
 **Where to click first:** [Program overview](pages/program-overview.md) · [Curriculum at a glance](pages/curriculum-at-a-glance.md) · [First course book — AINS-M6001](ains-m6001/)
 
@@ -58,21 +60,21 @@ description: Graduate-level AI for marketing leaders — measurable campaigns, g
 <img src="images/pillar-measurement.jpg" alt="Laptop showing charts and data visualization for marketing measurement." width="900" height="600" loading="lazy" decoding="async" />
 <div class="magai-pillar-body">
 <h3 class="magai-pillar-title">Prove it in the numbers</h3>
-<p>Calibration, attribution thinking, and privacy-aware measurement—so your AI-assisted plans tie to <strong>evidence</strong> leadership can trust.</p>
+<p>Calibration, attribution thinking, and privacy-aware measurement — so you can stand next to finance and ops with <strong>evidence</strong>, not vibes.</p>
 </div>
 </div>
 <div class="magai-pillar-card">
 <img src="images/pillar-collaboration.jpg" alt="Marketing team collaborating around a laptop in a meeting." width="900" height="600" loading="lazy" decoding="async" />
 <div class="magai-pillar-body">
 <h3 class="magai-pillar-title">Ship with your stack</h3>
-<p>Campaign orchestration, creative testing, and growth loops—connected to real platforms where the program requires it, via <strong>explicit MCP scopes</strong>.</p>
+<p>Campaign orchestration, creative testing, and growth loops — connected to real platforms where the program requires it, with <strong>explicit scopes</strong> so you know what was touched and why (see <a href="docs/MCP_MARKETING.md">MCP &amp; marketing tools</a>).</p>
 </div>
 </div>
 <div class="magai-pillar-card">
 <img src="images/pillar-strategy.jpg" alt="Professional workspace with strategy planning and creative review." width="900" height="600" loading="lazy" decoding="async" />
 <div class="magai-pillar-body">
 <h3 class="magai-pillar-title">Defend under scrutiny</h3>
-<p>Ethics, narrative competition, and thesis-grade deployment—so your work stands up to <strong>finance</strong>, <strong>legal</strong>, and <strong>the market</strong>.</p>
+<p>Ethics, narrative competition, and thesis-grade deployment — so when leadership or legal asks hard questions, you have <strong>documentation</strong>, not a shrug.</p>
 </div>
 </div>
 </div>
@@ -86,7 +88,7 @@ description: Graduate-level AI for marketing leaders — measurable campaigns, g
 | --- | --- |
 | **Magisterium** | Castalia’s credential system—earned through demonstrated work, not attendance alone. |
 | **MCP** | [Model Context Protocol](https://modelcontextprotocol.io/)—a way to connect AI workflows to real marketing systems **with explicit scope**; policy is in [MCP & marketing tools](docs/MCP_MARKETING.md). |
-| **Artifact** | Something you built that someone else can review—code, sim, notebook line, deployment evidence. |
+| **Artifact** | Work a reviewer can inspect: simulations, documented runs, notebook logic, deployment evidence — leadership-grade evidence, not a GitHub job interview. |
 | **SAMWISE** | Structured reflection and critique in the stack—not a generic “journal.” |
 | **AINS-M####** | Course codes (like **AINS-M6001**); use them to find your module in the [catalog](catalog.md). |
 
@@ -96,30 +98,31 @@ description: Graduate-level AI for marketing leaders — measurable campaigns, g
 
 | Typical AI training | Mag.AI-Marketing |
 | --- | --- |
-| Prompt tricks and one-off demos | **Simulatable** audience, message, and channel dynamics |
-| Disconnected from your stack | **MCP**-aware workflows tied to major marketing platforms (where the program requires it) |
-| “Understand AI” as vocabulary | **AI literacy spine**: evaluation, grounding, retrieval, oversight—embedded in marketing artifacts |
-| Certificate as completion | **Magisterium** credential: artifacts, defenses, and a thesis-grade deployment |
+| Prompt tricks and one-off demos | **Simulatable** audience, message, and channel dynamics you can explain to a non-technical exec |
+| Disconnected from your stack | **Scoped** connections to major marketing platforms (where the program requires it) — know what integrates, not just what slides say |
+| “Understand AI” as vocabulary | **AI literacy spine**: how to **evaluate** outputs, demand **grounding**, and set **oversight** — embedded in marketing work |
+| Certificate as completion | **Magisterium** credential: artifacts, defenses, and a thesis-grade deployment you can show, not just claim |
 
 ---
 
 ## What you’ll leave with
 
-- **Models you can run** — attention, trust, positioning, campaigns, and growth loops as mechanics, not metaphors  
+- **Language for mechanics** — attention, trust, positioning, campaigns, and growth as structures you can stress-test, not slogans  
 - **Evidence habits** — calibration, mismatch, and measurement under privacy and compliance constraints  
-- **Tool fluency** — connecting AI workflows to real systems with explicit scopes ([MCP & marketing tools](docs/MCP_MARKETING.md))  
-- **A graduate toolbox** — documented lineage from notebooks to deployed or validated systems ([certificate & graduate toolbox](pages/certificate.md))  
+- **Integration sense** — enough depth to scope vendor work and internal pilots with **explicit boundaries** ([MCP & marketing tools](docs/MCP_MARKETING.md))  
+- **A graduate toolbox** — documented lineage others can follow ([certificate & graduate toolbox](pages/certificate.md))  
 
 ---
 
 ## Who this is for
 
-- **Marketing & growth leaders** who own pipeline, spend, or narrative—and need AI that **holds up in reviews**  
-- **Brand and product marketing** aligning story with funnel reality and creative testing at scale  
-- **Marketing ops & martech** owners who must **govern** integrations, data, and automation  
-- **Founders and strategists** who pitch investors and customers with **defensible** claims  
+- **Directors and managers** from regional firms, nonprofits, and growth-stage companies — business or marketing degrees, deep on outcomes, lighter on formal CS  
+- **Marketing & growth leaders** who own pipeline, spend, or narrative and need AI claims that **hold up** with finance and legal  
+- **Brand and product marketing** aligning story with funnel reality and honest creative testing  
+- **Marketing ops & martech** owners who must **govern** integrations, data, and automation without becoming the IT department  
+- **Anyone coaching others** — team leads who need repeatable ways to **raise literacy** and cut through hype for peers and agencies  
 
-This is **not** a light tips course: expect rigor, documentation, and critique. It **is** built so you always know **what to read next** and **where to build**.
+This is **not** a coding bootcamp or a light tips course: expect rigor, documentation, and critique. It **is** built so you always know **what to read next**, **what to ask vendors**, and **how to help your team use AI without gambling trust**.
 
 ---
 

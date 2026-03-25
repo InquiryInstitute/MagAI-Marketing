@@ -12,15 +12,18 @@
 
 ## Who it is for
 
-- Founders and marketers who are tired of playbook theater
-- Growth leads who want **mechanisms**, not vanity metrics
-- Builders who will use AI as **instrument**, not oracle
+- **Experienced marketers** with undergraduate or graduate training in business or marketing — including graduates of smaller colleges — who want **credible AI leadership** without retraining as engineers  
+- **Managers and directors** who must translate between executives, agencies, and technical staff: enough depth to **evaluate** proposals, not enough expectation that you ship production software  
+- **Growth and brand leads** who want **mechanisms** (what could go wrong, what to measure), not vanity metrics or slide-only strategy  
+- **People who will help others** — team leads who need repeatable ways to **coach** peers, protect junior staff from hype, and brief vendors with clarity  
+
+If you worry about being “left behind” by AI, or the opposite — sounding like you know more than you do — this program is structured so **evidence and documentation** replace bluffing.
 
 ---
 
 ## Where you learn: iNQspace
 
-**Mag.AI-Marketing teaches AI through iNQspace** — the Castalia lab environment for notebooks, simulations, integrated tooling, and traceable artifacts. Coursework is not “watch then quiz”; it is build, run, reflect, and defend work that lives in iNQspace so reviewers can inspect mechanics, not just narratives.
+**Mag.AI-Marketing teaches through iNQspace** — the Castalia lab environment for notebooks, simulations, integrated tooling, and traceable artifacts. You will work with **runnable models** the way a strong MBA works with spreadsheets: as instruments for **thinking and defense**, not as a job title in software. Coursework is not “watch then quiz”; it is build, run, reflect, and defend work that lives in iNQspace so reviewers can inspect mechanics, not just narratives.
 
 ## How program materials are published
 

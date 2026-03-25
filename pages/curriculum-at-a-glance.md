@@ -5,7 +5,7 @@ description: Eighteen courses in three terms — links open each course’s own 
 
 # Curriculum overview
 
-**Mag.AI-Marketing (Magister of Artificial Intelligence in Marketing)** is **18 courses** in **three terms**. You progress from simulatable **audience and message worlds** to **campaigns, testing, and growth**, then to **competition, budgets, automation, ethics**, and a **capstone thesis**. Work is artifact-driven: you build runnable models and defenses, not slide-only summaries.
+**Mag.AI-Marketing (Magister of Artificial Intelligence in Marketing)** is **18 courses** in **three terms**. You progress from simulatable **audience and message worlds** to **campaigns, testing, and growth**, then to **competition, budgets, automation, ethics**, and a **capstone thesis**. Work is artifact-driven: you build runnable models and defenses, not slide-only summaries. *Runnable* means “inspectable by a reviewer,” not “you are training to be a software developer.”
 
 Each course is published as **its own book** (separate site). The table below links to those books; the full index is on **[Course sites](../catalog.md)**.
 
