@@ -1,6 +1,6 @@
 ---
 title: Mag.AI-Marketing
-description: AI leadership for marketers — judgment, measurement, and governed tools. Built for people who will never be programmers but must lead teams and vendors with credibility.
+description: Marketing leadership for an AI-shaped world — approachable rigor, evidence you can defend, and a clear-eyed take on what can go wrong when AI meets brand, budget, and the law.
 site:
   # Custom hero includes the page title; hide MyST’s duplicate title block (nav still shows the name).
   hide_title_block: true
@@ -13,14 +13,18 @@ site:
 <div class="magai-hero-copy">
 <a href="/magai/" class="magai-back-link">MagAI programs</a>
 <span class="magai-eyebrow">Castalia · School of AI</span>
-<h1 class="magai-hero-lead">For marketing leaders who built their careers on judgment, relationships, and results — and need AI to strengthen that craft, not replace it.</h1>
-<p class="magai-hero-kicker">You do <strong>not</strong> need to become a software engineer. You <strong>do</strong> need to ask the right questions, spot weak claims, and connect AI work to <strong>outcomes your CFO and your customers can trust</strong>: simulatable audience dynamics, grounded content workflows, and tool connections your org can audit.</p>
+<p class="magai-hero-program" aria-label="Program name">Mag.AI-Marketing</p>
+<h1 class="magai-hero-lead">Lead marketing in the age of AI—without losing your judgment, your team, or your nerve.</h1>
+<div class="magai-hero-friction" role="note">
+<p>The risk isn’t that models will “replace marketers.” It’s that <strong>overconfident automation</strong>, <strong>sloppy measurement</strong>, and <strong>unchecked vendor narratives</strong> reach your customers, your CFO, and legal <em>before</em> you’ve had a straight story about what was touched, what was true, and what you’re willing to sign your name to.</p>
+</div>
+<p class="magai-hero-kicker">You don’t need to become an engineer. You need <strong>clarity</strong>—simulations you can stress-test, workflows you can defend, and tool connections your org can audit—so AI strengthens how you already lead: relationships, taste, and outcomes people trust.</p>
 <blockquote class="magai-hero-quote">
-<p>Maybe you earned a business degree at a smaller school, climbed through brand or demand gen, and you’re tired of either <strong>pretending</strong> to understand AI or <strong>deferring</strong> entirely to vendors. Castalia meets you there: <strong>rigor without theater</strong> — so you can protect your team, coach stakeholders, and help others use AI without gambling the brand.</p>
+<p>If you’re tired of <strong>pretending</strong> to get AI or <strong>deferring</strong> to whoever sounds smartest in the room, you’re in the right conversation. Castalia is <strong>rigor without theater</strong>—protect your team, coach stakeholders, and use AI without gambling the brand.</p>
 </blockquote>
 <div class="magai-hero-ctas">
-<a href="ains-m6001/" class="magai-btn magai-btn--primary">Start with AINS-M6001 →</a>
-<a href="pages/program-overview.md" class="magai-btn magai-btn--ghost">How the program works</a>
+<a href="pages/program-overview.md" class="magai-btn magai-btn--primary">How the program works</a>
+<a href="ains-m6001/" class="magai-btn magai-btn--ghost">Begin with the first course →</a>
 </div>
 </div>
 <div class="magai-hero-visual">
@@ -41,7 +45,7 @@ site:
 <div class="magai-stat" role="listitem"><strong>MCP</strong><span>scoped integrations</span></div>
 </div>
 
-<p class="magai-prose-highlight">Whether you run demand gen, brand, growth, or marketing ops, you are judged on <strong>pipeline</strong>, <strong>efficiency</strong>, and <strong>trust</strong>. Mag.AI-Marketing is for people who may never write production code but who <strong>must</strong> lead: you learn to <strong>frame</strong> markets clearly, <strong>stress-test</strong> campaigns before spend scales, and <strong>govern</strong> how AI touches data, creative, and measurement — with ethics and evidence wired in from day one.</p>
+<p class="magai-prose-highlight">Demand gen, brand, growth, or ops—you’re on the hook for <strong>pipeline</strong>, <strong>efficiency</strong>, and <strong>trust</strong>. This program is for leaders who may never ship production code but <strong>must</strong> own the story: <strong>frame</strong> markets clearly, <strong>stress-test</strong> campaigns before spend scales, and <strong>govern</strong> how AI touches data, creative, and measurement—with ethics and evidence baked in from day one.</p>
 
 ---
 

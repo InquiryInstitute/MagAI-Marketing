@@ -250,7 +250,9 @@ article .magai-program-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 120% 100% at 50% 0%, var(--magai-navy-800) 0%, var(--magai-navy-950) 72%);
+  background:
+    radial-gradient(ellipse 90% 80% at 80% -10%, rgba(201, 168, 76, 0.09) 0%, transparent 52%),
+    radial-gradient(ellipse 120% 100% at 50% 0%, var(--magai-navy-800) 0%, var(--magai-navy-950) 72%);
   z-index: 0;
 }
 
@@ -282,18 +284,59 @@ article .magai-hero-copy {
   min-width: 0;
 }
 
+article .magai-hero-program {
+  font-family: var(--castalia-font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(212, 168, 83, 0.95);
+  margin: 0 0 0.75rem;
+}
+
 article .magai-hero-sub,
 article .magai-hero-lead {
   font-family: var(--castalia-font-serif);
-  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.35rem);
-  font-weight: 600;
+  font-size: clamp(1.2rem, 1.05rem + 0.65vw, 1.55rem);
+  font-weight: 650;
   font-style: italic;
-  color: rgba(245, 245, 244, 0.92);
-  margin: 0 0 1rem;
-  max-width: 38rem;
-  line-height: 1.45;
+  color: rgba(252, 250, 245, 0.96);
+  margin: 0 0 1.1rem;
+  max-width: 40rem;
+  line-height: 1.42;
   border-bottom: none;
   padding-bottom: 0;
+}
+
+article .magai-hero-friction {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.1rem 1rem 1.15rem;
+  max-width: 42rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(127, 29, 29, 0.35);
+  background:
+    linear-gradient(135deg, rgba(127, 29, 29, 0.14) 0%, rgba(15, 23, 42, 0.55) 55%, rgba(15, 23, 42, 0.35) 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+}
+
+article .magai-hero-friction p {
+  margin: 0;
+  font-family: var(--castalia-font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.58;
+  font-style: normal;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+article .magai-hero-friction strong {
+  color: var(--magai-stone-100);
+  font-weight: 650;
+}
+
+article .magai-hero-friction em {
+  color: rgba(251, 191, 36, 0.88);
+  font-style: normal;
+  font-weight: 600;
 }
 
 article .magai-hero-ctas {
@@ -363,10 +406,11 @@ article .magai-hero-figure img {
   margin-left: 0 !important;
   margin-right: 0 !important;
   border-radius: 0.625rem;
-  border: 1px solid rgba(212, 168, 83, 0.28);
+  border: 1px solid rgba(212, 168, 83, 0.32);
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    0 4px 28px rgba(0, 0, 0, 0.4),
+    0 0 48px rgba(201, 168, 76, 0.06),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
   object-fit: contain;
 }
 
@@ -1348,10 +1392,32 @@ html.light article .magai-program-hero::before {
   background: radial-gradient(ellipse 120% 100% at 50% 0%, #e2e8f0 0%, #f8fafc 72%);
 }
 
+html.light article .magai-hero-program {
+  color: #0f766e;
+}
+
 html.light article .magai-hero-sub,
 html.light article .magai-hero-lead,
 html.light article .magai-hero-copy > h2 + p {
+  color: #1e293b;
+}
+
+html.light article .magai-hero-friction {
+  border-color: rgba(185, 28, 28, 0.28);
+  background: linear-gradient(135deg, rgba(254, 226, 226, 0.6) 0%, #f8fafc 55%, #f1f5f9 100%);
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06) inset;
+}
+
+html.light article .magai-hero-friction p {
   color: #334155;
+}
+
+html.light article .magai-hero-friction strong {
+  color: #0f172a;
+}
+
+html.light article .magai-hero-friction em {
+  color: #b45309;
 }
 
 html.light article .magai-hero-kicker,
