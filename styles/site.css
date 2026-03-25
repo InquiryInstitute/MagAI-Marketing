@@ -1002,6 +1002,27 @@ article a.hover-link:hover {
   color: var(--magai-gold-bright) !important;
 }
 
+/* Hub CTAs are <a class="link magai-btn …"> — global gold link color must not apply on buttons. */
+article a.magai-btn--primary,
+article .magai-btn.magai-btn--primary {
+  color: var(--magai-navy-950) !important;
+}
+
+article a.magai-btn--primary:hover,
+article .magai-btn.magai-btn--primary:hover {
+  color: var(--magai-navy-950) !important;
+}
+
+article a.magai-btn--ghost,
+article .magai-btn.magai-btn--ghost {
+  color: var(--magai-stone-100) !important;
+}
+
+article a.magai-btn--ghost:hover,
+article .magai-btn.magai-btn--ghost:hover {
+  color: var(--magai-gold-bright) !important;
+}
+
 article blockquote {
   border-left-color: rgba(212, 168, 83, 0.55);
   background: rgba(30, 41, 59, 0.45);
