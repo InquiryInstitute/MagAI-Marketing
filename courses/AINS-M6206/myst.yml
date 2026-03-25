@@ -19,6 +19,8 @@ site:
   options:
     logo_text: "AINS-M6206"
     style: ../../styles/site.css
+    # Match hub: TOC lives in the primary nav (Open Menu → left slide-out on narrow viewports).
+    hide_outline: true
   actions:
     - title: Mag.AI-Marketing (program)
       url: https://magisterium.castalia.institute/magai/marketing/

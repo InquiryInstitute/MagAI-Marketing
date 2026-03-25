@@ -1,6 +1,6 @@
 ---
 title: Mag.AI-Marketing
-description: Marketing leadership for an AI-shaped world — approachable rigor, evidence you can defend, and a clear-eyed take on what can go wrong when AI meets brand, budget, and the law.
+description: The Magisterium credential for post-AI marketing leadership — a class of its own for future marketers when AI is ambient; artifacts, governance, and judgment you can defend.
 site:
   # Custom hero includes the page title; hide MyST’s duplicate title block (nav still shows the name).
   hide_title_block: true
@@ -43,6 +43,10 @@ site:
 <div class="magai-stat" role="listitem"><strong>3</strong><span>terms</span></div>
 <div class="magai-stat" role="listitem"><strong>Artifact</strong><span>graded work</span></div>
 <div class="magai-stat" role="listitem"><strong>MCP</strong><span>scoped integrations</span></div>
+</div>
+
+<div class="magai-positioning-strip">
+<p><strong>Post-AI marketing.</strong> Castalia designed Mag.AI-Marketing to be <strong>only in its class</strong>—not a “better” generic AI certificate, but the Magisterium credential for <strong>future marketing</strong> when models and tools are everywhere. The goal isn’t only to rank <em>best</em> among tips-and-tricks courses; it’s to prepare leaders who can <strong>govern, measure, and narrate</strong> under scrutiny in that landscape—with <strong>artifacts and defenses</strong> others can review.</p>
 </div>
 
 <p class="magai-prose-highlight">Demand gen, brand, growth, or ops—you’re on the hook for <strong>pipeline</strong>, <strong>efficiency</strong>, and <strong>trust</strong>. This program is for leaders who may never ship production code but <strong>must</strong> own the story: <strong>frame</strong> markets clearly, <strong>stress-test</strong> campaigns before spend scales, and <strong>govern</strong> how AI touches data, creative, and measurement—with ethics and evidence baked in from day one.</p>
@@ -124,7 +128,7 @@ site:
 | **Growth- or attribution-only bootcamps** | Channel tactics, dashboards | **Positioning, narrative, brand dynamics**, ethics, **thesis**—growth couples to story, trust, and integrity. |
 | **“AI strategy” seminars** | High-level frameworks, little inspectable work | **Magisterium**: defenses, lineage, **deployment evidence** someone else can audit. |
 
-<p class="magai-prose-highlight">If you need a <strong>checklist badge</strong> for a résumé line, many paths can work. If you need to <strong>lead</strong> when AI touches data, creative, spend, and reputation—Mag.AI-Marketing is built for <strong>reviewable judgment</strong>, not theater.</p>
+<p class="magai-prose-highlight">If you need a <strong>checklist badge</strong> for a résumé line, many paths can work. If you need to <strong>lead</strong> in a <strong>post-AI</strong> market—where AI is infrastructure, not hype—Mag.AI-Marketing is built as <strong>the credential in its class</strong> for <strong>reviewable judgment</strong>, not theater. Details: <a href="pages/certificate.md#post-ai-positioning">Certificate &amp; credential</a>.</p>
 
 ---
 

@@ -77,6 +77,8 @@ site:
   options:
     logo_text: "{code}"
     style: ../../styles/site.css
+    # Match hub: TOC lives in the primary nav (Open Menu → left slide-out on narrow viewports).
+    hide_outline: true
   actions:
     - title: Mag.AI-Marketing (program)
       url: {HUB_ACTION_URL}

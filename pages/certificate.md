@@ -13,6 +13,18 @@ Abbreviation: **Mag.AI-Marketing**
 
 ---
 
+<h2 id="post-ai-positioning">Positioning: post-AI marketing leadership</h2>
+
+Castalia positions **Mag.AI-Marketing** not only to be **strong among** AI-in-marketing offerings, but to **define a class of its own**: the Magisterium credential for **future marketing in a post-AI landscape**.
+
+**Post-AI** (as we use it here) does not mean “after artificial intelligence ends.” It means **after AI stops being a novelty** and becomes **ambient infrastructure**—models in every workflow, agents behind every brief, measurement contested in real time. In that world, marketing leadership turns on **judgment, governance, narrative integrity, and evidence**—not on who knows the most prompt tricks.
+
+**Only in class:** Within Castalia’s Magisterium catalog, this is the **dedicated marketing track** built **end-to-end** for that environment: simulatable worlds, **artifact**-graded work, **MCP-scoped** tool practice, defenses, and a **thesis**—so the credential signals **reviewable leadership**, not a checklist completed beside your day job.
+
+Other programs may be “best in class” at workshops, vendor badges, or generic literacy. **Mag.AI-Marketing** is aimed at marketers who will **own the post-AI story** for their brand, their budget, and their team—**with work others can inspect**.
+
+---
+
 ## Path
 
 ```

@@ -2,12 +2,13 @@
 version: 1
 project:
   title: Mag.AI-Marketing
-  description: AI leadership for marketers who will not be programmers — judgment, measurement, governed tools, and Magisterium credential work you can defend to leadership and your team.
+  description: Magisterium credential for post-AI marketing leadership—Castalia’s marketing track when AI is ambient; judgment, measurement, governed tools, and artifact-grade work you can defend.
   keywords:
     - marketing
     - artificial intelligence
     - Castalia
     - Magisterium
+    - post-AI marketing
   exclude:
     - README.md
     - pages/README.md
@@ -35,8 +36,8 @@ site:
   options:
     logo_text: Castalia Institute - Magisterium
     style: styles/site.css
-    # Keep the landing page from showing the in-page “Contents” block above the hero; section
-    # links stay in the left nav drawer (Open Menu → Table of Contents). Course books omit this.
+    # Hide the in-page “Contents” block; section links stay in the left nav drawer
+    # (Open Menu → Table of Contents). Same for every course book (see courses/*/myst.yml).
     hide_outline: true
   actions:
     - title: Castalia — Magisterium

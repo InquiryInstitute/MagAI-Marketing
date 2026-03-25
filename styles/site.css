@@ -450,6 +450,27 @@ article .magai-stat-strip {
   background: linear-gradient(180deg, rgba(30, 41, 59, 0.55) 0%, rgba(17, 24, 39, 0.4) 100%);
 }
 
+article .magai-positioning-strip {
+  margin: 0 0 1.75rem;
+  padding: 1.15rem 1.35rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(212, 168, 83, 0.35);
+  background: linear-gradient(125deg, rgba(212, 168, 76, 0.08) 0%, rgba(15, 23, 42, 0.45) 48%, rgba(17, 24, 39, 0.35) 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset;
+}
+
+article .magai-positioning-strip p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--magai-stone-200);
+  max-width: none;
+}
+
+article .magai-positioning-strip strong {
+  color: var(--magai-stone-100);
+}
+
 article .magai-stat {
   text-align: center;
   min-width: 5.5rem;

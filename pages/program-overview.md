@@ -8,6 +8,8 @@
 
 **Mag.AI-Marketing** is the marketing track of the Castalia Magisterium: you build *simulatable worlds* of audiences, messages, and channels — then deploy with measurement, not hope.
 
+**Positioning.** Castalia aims for this credential to be **only in its class** for **post-AI marketing leadership**—not merely best among generic “AI for marketers” offerings, but the **Magisterium path** for when AI is **ambient** and your edge is **governance, evidence, and narrative you can defend**. Read more: [Certificate & credential](./certificate.md#post-ai-positioning).
+
 ---
 
 ## Who it is for
